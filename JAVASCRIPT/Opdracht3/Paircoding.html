@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <script>
+       
+    // // Oplossing.
+    // sum = 0; 
+    // arr = [];
+    // for (i = 0; i < 1000; i+=3) { sum +=i; arr.push(i) } 
+    // for (j = 0; j < 1000; j+=5) { if (!arr.includes(j))sum +=j } 
+    // console.log(sum);   
+    //   </script>
+    // <!-- Als je een lijst maakt van alle getallen onder de 10 die een meervoud zijn
+    // van 3 of 5 krijg je 3, 5, 6 en 9. De optelsom van deze getallen is 23. Geef
+    // de optelsom van alle getallen onder de 1000 die een meervoud van 3 of 5
+    // zijn. -->
+
+
+
+    <!-- // let fibo = [0,1];
+
+//  for (i=0; i<=400; i++){
+
+//     for (i =0; i<=400; i+=2 )
+
+//  som = fibo[i] + fibo[i+1];
+
+//  fibo.push(som)
+// }
+//  console.log(som)
+
+ let fib = [0, 1]
+        let sum = 0;
+        while (true) {
+            let i = fib[fib.length - 2] + fib[fib.length - 1]
+            fib.push(i)
+            if (i % 2 === 0) sum += i
+            if (i >= 4000000) break;
+        }
+        console.log(sum)
+
+
+//  for (i=0; i<=2; i++){
+//          for (even =0; even<=20; even+=2 ){
+                
+//  }          
+//  console.log( even)          
+// }
+
+
+//oplossing van Jens
+// let fib = [0, 1]
+//         let sum = 0;
+//         while (true) {
+//             let i = fib[fib.length - 2] + fib[fib.length - 1]
+//             fib.push(i)
+//             if (i % 2 === 0) sum += i
+//             if (i >= 4000000) break;
+//         }
+//         console.log(sum)
+
+//Oplossing van Justin.H
+// let vorigNR = 0;
+// let huidigNR = 1;
+// let Som = 0;
+// let volgendNR;
+
+// //for loop
+// for (i = 1; i < 100; i++) {
+//   volgendNR = huidigNR + vorigNR;
+//   vorigNR = huidigNR;
+//   huidigNR = volgendNR;
+
+//   if (huidigNR % 2 === 0 && huidigNR < 4000000) {
+//     Som += huidigNR;
+//   }
+// }
+// console.log(Som);
+
+
+//Oplossing Carmen
+// let series = [0, 1]
+
+
+// for (i=0; i<50; i++) {
+//     nextNumber = series[i] + series[i+1]
+//     series.push(nextNumber)
+// }
+// console.log(series)
+
+// let evenFibonacci = []
+
+// for (j=0; j<series.length; j++) {
+//     if(series[j] % 2 === 0 && series[j] <= 4000000) {
+//         evenFibonacci.push(series[j])
+//     }
+// }
+
+// const sum = evenFibonacci.reduce((a, b) => a + b, 0);
+// console.log(sum) -->
+  </body>
+</html>

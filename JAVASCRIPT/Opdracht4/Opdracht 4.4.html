@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" onchange="peopleChecker()" id="example" value="" />
+
+    <script>
+      //A
+      // function peopleChecker() {
+      //     switch (input) {
+      //       case "Elias":
+      //         console.log("Hey its Elias!");
+      //         break;
+      //       case "Maher":
+      //         console.log("Hey its Maher!");
+      //         break;
+      //       case "Justin":
+      //         console.log("Hey its Justin!");
+      //         break;
+      //       case "Chantalle":
+      //         console.log("Hey its Chantalle!");
+      //         case "Frankie":
+      //         console.log("Hey its Frankie!")
+      //         break;
+      //       default:
+      //         console.log("Wrong person!!");
+      //     }
+      //   }
+
+      //B
+      //   function peopleChecker() {
+      //     let input = document.getElementById("example").value; //Hierin moet de ID, GetId moet in de funtie om te werken.
+      //     console.log(input);
+      //     switch (input) {
+      //       case "Elias":
+      //         console.log("Hey its Elias!");
+      //         break;
+      //       case "Maher":
+      //         console.log("Hey its Maher!");
+      //         break;
+      //       case "Justin":
+      //         console.log("Hey its Justin!");
+      //         break;
+      //       case "Chantalle":
+      //         console.log("Hey its Chantalle!");
+      //         case "Frankie":
+      //         console.log("Hey its Frankie!")
+      //         break;
+      //       default:
+      //         console.log("Wrong person!!");
+      //     }
+      //   }
+
+      //C
+      peopleChecker = () => {
+        let input = document.getElementById("example").value;
+        console.log(input);
+        switch (input) {
+          case "Elias":
+            console.log("Hey its Elias!");
+            break;
+          case "Maher":
+            console.log("Hey its Maher!");
+            break;
+          case "Justin":
+            console.log("Hey its Justin!");
+            break;
+          case "Chantalle":
+            console.log("Hey its Chantalle!");
+          case "Frankie":
+            console.log("Hey its Frankie!");
+            break;
+          default:
+            console.log("Wrong person!!");
+        }
+      };
+    </script>
+  </body>
+</html>

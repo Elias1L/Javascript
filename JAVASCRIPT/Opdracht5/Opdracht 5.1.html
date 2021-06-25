@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //A
+      // let numbers = [1,2,3,4,5,6,7,8,9,10];
+      // console.log(numbers);
+
+      //B
+      // let fruit = ["Appel", "Aardbei", "Mango", "Ananas", "Passievrucht"];
+      //C
+      // let fruits = fruit.indexOf("Appel");
+      // let moreFruits = fruit.indexOf("Aardbei");
+
+      // console.log(fruit[0]); Op deze manier trek je uit de array zonder indexOf
+      // console.log(fruit[1]);
+
+      // console.log(fruit.length)
+      // console.log(fruits)
+      // console.log(moreFruits)
+
+      //D
+      //   let fruit = ["Appel", "Aardbei", "Mango", "Ananas", "Passievrucht"];
+      //   let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      //   console.log(numberArray);
+      //   let randomNumber = Math.random(numberArray);
+      //   console.log(randomNumber); //Deze werkt denk ik wel. Wat ik weet van math.random is dat het alleen werkt voor getallen tussen 0 en 1.
+      //   let floorNumber = [Math.floor(Math.random() * numberArray.length)];
+      //   console.log(floorNumber);
+      //   floorNumber.random;
+      //   console.log(fruit[floorNumber]);
+
+      //E
+      //   let fruit = ["Appel", "Aardbei", "Mango", "Ananas", "Passievrucht"];
+      //   // console.log(fruit.length)
+
+      //F
+      //   console.log(fruit[floorNumber % fruit.length]);
+
+      //G
+      //   let fruit = ["Appel", "Aardbei", "Mango", "Ananas", "Passievrucht"];
+      //   fruit[0] = "Peer"; //met [] kan je eruit pikken welke je wil veranderen en na = teken geef je de nieuwe waarde mee.
+      //   console.log(fruit);
+
+      //H
+      //   fruit.splice(0, 2, "Aardbei","Peer" );
+      //   console.log(fruit)
+
+      //     fruit.splice(fruit, 0, )
+      //     console.log(fruit)
+      //    Dit is de andere methode.
+      //         function moveArrayItemToNewIndex(arr, old_index, new_index) {
+      //       if (new_index >= arr.length) {
+      //           var k = new_index - arr.length + 1;
+      //           while (k--) {
+      //               arr.push(undefined);
+      //           }
+      //       }
+      //       arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+      //       return arr;
+      //   };
+
+      //move index 1(b) to index 2(c)
+      //   console.log(moveArrayItemToNewIndex(["Peer", "Aardbei", "Mango", "Ananas", "Passievrucht"], 0, 1));
+    </script>
+  </body>
+</html>

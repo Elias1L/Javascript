@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //A
+      // const dutchSports = ["Voetbal", "Hockey", "Schaatsen"];
+      // console.log(dutchSports[0])
+      // console.log(dutchSports[1])
+      // console.log(dutchSports[2])
+
+      // //B
+      // for (let sport in dutchSports) {
+      //   console.log(dutchSports[sport]);
+      // } //for in geef je de index waarde mee van dutchSports
+
+      // for (let sports of dutchSports) {
+      //   console.log(sports);
+      // } // for of verandert de Let sports in de waarde van dutchSports
+
+      // //C
+      // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // for (let i = 0; i <= 20; i++) {
+      //   if (i % 2 == 0) {
+      //     console.log(i)
+      //   }
+      // }
+
+      //D
+      // for (let i = 0; i <= 10; i++) {
+      //   if (i % 2 == 0)
+      //     console.log(i)
+      //   for(let b= 0; b <= 10; b++){
+      //     console.log(b)
+      //   }
+      // }
+
+      //E & F
+      // for (let i = 0; i <= 10; i++) {
+      //   if (i % 2 == 0) console.log(i);
+
+      //   for (let b = 0; b <= 10; b++) {
+      //     console.log(b);
+      //   }
+      //   for (let n = 0; n <= 20; n++) {
+      //     if (n % 2 == 0) console.log(n);
+      //   }
+      //   for (let c = 0; c <= 30; c++) {
+      //     if (c % 3 == 0) console.log(c);
+      //   }
+      // }
+
+      //G
+      // const number = 7778742049;
+      // let n1 = 0,
+      //   n2 = 1,
+      //   nextTerm;
+
+      // console.log("Fibonacci Series:");
+      // console.log(n1); // print 0
+      // console.log(n2); // print 1
+
+      // nextTerm = n1 + n2;
+
+      // while (nextTerm <= number) {
+      //   // print the next term
+      //   console.log(nextTerm);
+
+      //   n1 = n2;
+      //   n2 = nextTerm;
+      //   nextTerm = n1 + n2;
+      // }
+
+      //H
+      // let myArray= [7,5,9,6]
+      // // console.log(myArray)
+      // for(let n=0; n <= myArray.length; n++ ){
+      // let firstIndex = myArray[0];
+      // let secondIndex = myArray[1];
+      //  if(firstIndex > secondIndex){
+
+      //  secondIndex = firstIndex  &&
+
+      //   console.log(secondIndex)
+      //   console.log(firstIndex)
+      //  }
+
+      // }
+
+      //H OPDRACHT H ZONDER BUBBLESORT
+      // let numbers = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+      // numbers.sort(function (a, b) {
+      //   if (a > b) return 1;
+      //   if (a < b) return -1;
+      //   return 0;
+      // });
+
+      // console.log(numbers);
+
+      items 
+      function bubbleSort(items) {
+  var length = items.length;
+  for (var i = 0; i < length; i++) { //Number of passes
+    for (var j = 0; j < (length - i - 1); j++) { //Notice that j < (length - i)
+      //Compare the adjacent positions
+      if (items[j] > items[j + 1]) {
+        //Swap the numbers
+        var tmp = items[j]; //Temporary variable to hold the current number
+        items[j] = items[j + 1]; //Replace current number with adjacent number
+        items[j + 1] = tmp; //Replace adjacent number with current number
+      }
+    }
+  }
+}
+    </script>
+  </body>
+</html>

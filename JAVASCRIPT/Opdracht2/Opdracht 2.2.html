@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>            
+        let leerJava = "Ik ben steeds meer aan het leren over javascript";
+        console.log(leerJava.substring(-10,-5));
+
+    // A)
+    // Wat doet substring() als het eerste getal hoger is dan het tweede getal?
+    // Het lijkt erop dat de substring de omgekeerde volgorde negeert en toch begint bij het begin van een zin.
+    // Ik heb het getest als in 1e getal lager, 2e getal hoger en, 1e getal hoger, 2e getal lager.
+    // Beide geven hetzelfde resultaat uit.
+
+    // B)
+    // Wat doet slice() als het eerste getal hoger is dan het tweede getal?
+    // Als je de 1e getal hoger zet dan de 2e getal, print het bij de console.log blanco regel uit.
+    // Kortom het past zich niet aan als substring. Wat ik hierbij denk is dat de substring daarin veelzijdiger is qua functie.
+        
+    // C)
+    // Wat doet substring() bij negatieve waardes?
+        // Bij substring gebeurt er niks. Ik krijg een blanco regel te zien.
+   
+    // D)
+    // Wat doet slice() bij negatieve waardes?
+    // Als je negatieve waardes geeft bij slice(), begint het bij het einde van de zin.
+        </script>
+</body>
+</html>

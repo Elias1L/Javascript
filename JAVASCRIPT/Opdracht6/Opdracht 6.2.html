@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //A
+      //   let personsList = {
+      //    name: "Michael",
+      //    Club: "Tennis",
+      //    Aantal: "64" };
+
+      //   console.log(personsList);
+
+      //   //B
+      // let personsList = {
+      //    name: "Michael",
+      //    Club: "Tennis",
+      //    Aantal: "64",
+      //     contactInfo: {
+      //    Adres: "Pannenkoekplein",
+      //    Telefoonnummer: "06-12345678",
+      //    Contactpersoon: "Dennis" }}
+
+      //    console.log(personsList)
+
+      //    //C
+      let clubA = {
+        name: "Michael",
+        Club: "Tennis",
+        Aantal: "64",
+        contactInfo: {
+          Adres: "Pannenkoekplein",
+          Telefoonnummer: "06-12345678",
+          Contactpersoon: "Joost",
+        },
+      };
+
+      let clubB = {
+        name: "Kees",
+        Club: "Boksen",
+        Aantal: "88",
+        contactInfo: {
+          Adres: "Pannenkoekhof",
+          Telefoonnummer: "06-24572368",
+          Contactpersoon: "Peter",
+        },
+      };
+
+      let clubC = {
+        name: "Peter",
+        Club: "Boogschieten",
+        Aantal: "92",
+        contactInfo: {
+          Adres: "Pannenkoekpstraat",
+          Telefoonnummer: "06-33426785",
+          Contactpersoon: "Jim",
+        },
+      };
+
+      let clubD = {
+        name: "John",
+        Club: "Jiu-Jitsu",
+        Aantal: "46",
+        contactInfo: {
+          Adres: "Pannenkoeklaan",
+          Telefoonnummer: "06-47654321",
+          Contactpersoon: "Arnold",
+        },
+      };
+
+      let clubE = {
+        name: "Jerry",
+        Club: "Sambo",
+        Aantal: "14",
+        contactInfo: {
+          Adres: "Pannenkoekplein",
+          Telefoonnummer: "06-52112332",
+          Contactpersoon: "Dennis",
+        },
+      };
+
+
+
+      let clubArray = [clubA, 
+                      clubB, 
+                      clubC, 
+                      clubD, 
+                      clubE
+                    ];
+
+      for (let i of clubArray) {
+        console.log(i.contactInfo.Telefoonnummer,i.Club,i.contactInfo.Contactpersoon);
+        // console.log(i.contactInfo.Telefoonnummer)
+        // console.log(i.Club);
+        // console.log(i.contactInfo.Contactpersoon);
+      }
+
+
+
+      //***ANDERE MANIER
+      //Met object entries trek je ook een waarde eruit alleen,
+      //weet nog niet hoe je in de nested object komt om waardes eruit te trekken.
+            //   let extractValues = Object.entries(clubA);
+      //   console.log(extractValues[1])
+    </script>
+  </body>
+</html>
